@@ -1,0 +1,16 @@
+service: MyChatBot
+
+provider:
+  name: aws
+  runtime: python3.6
+  profile: tutorial-profile
+
+functions:
+  hello:
+    handler: handler.hello
+  handle_lookup:
+    handler: handler.handle_lookup
+    events:
+      - http:
+          path: lookup
+          method: any
