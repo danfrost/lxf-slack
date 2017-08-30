@@ -19,3 +19,4 @@ var/
 # Serverless directories
 .serverless
 scraps.md
+.DS_Store
